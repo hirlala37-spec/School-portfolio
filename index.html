@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "outline": "#747780",
+        "on-primary-fixed-variant": "#2d4678",
+        "primary-container": "#0f2b5c",
+        "surface-bright": "#f8f9ff",
+        "background": "#f8f9ff",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#7c94cb",
+        "on-secondary-container": "#744c00",
+        "on-secondary": "#ffffff",
+        "tertiary": "#001347",
+        "on-tertiary-container": "#7890e5",
+        "on-primary-fixed": "#001944",
+        "on-surface-variant": "#44464f",
+        "on-background": "#0d1c2f",
+        "error": "#ba1a1a",
+        "on-surface": "#0d1c2f",
+        "surface-container-lowest": "#ffffff",
+        "primary": "#00163d",
+        "on-tertiary-fixed-variant": "#264191",
+        "surface-container-highest": "#d5e3fd",
+        "tertiary-container": "#002575",
+        "secondary-fixed": "#ffddb3",
+        "inverse-primary": "#afc6ff",
+        "primary-fixed": "#d9e2ff",
+        "on-error": "#ffffff",
+        "secondary": "#825500",
+        "primary-fixed-dim": "#afc6ff",
+        "secondary-fixed-dim": "#fcba59",
+        "on-secondary-fixed-variant": "#624000",
+        "outline-variant": "#c4c6d0",
+        "inverse-on-surface": "#ebf1ff",
+        "tertiary-fixed-dim": "#b6c4ff",
+        "secondary-container": "#ffbd5c",
+        "on-error-container": "#93000a",
+        "surface": "#f8f9ff",
+        "surface-container-low": "#eff4ff",
+        "surface-dim": "#ccdbf4",
+        "error-container": "#ffdad6",
+        "tertiary-fixed": "#dce1ff",
+        "surface-container-high": "#dde9ff",
+        "on-tertiary": "#ffffff",
+        "surface-container": "#e6eeff",
+        "on-tertiary-fixed": "#00164e",
+        "inverse-surface": "#233144",
+        "on-secondary-fixed": "#291800",
+        "surface-tint": "#465d91",
+        "surface-variant": "#d5e3fd"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "gutter": "1.5rem",
+        "margin-mobile": "1.25rem",
+        "space-xl": "2.5rem",
+        "space-md": "1rem",
+        "gutter-mobile": "1rem",
+        "space-lg": "1.5rem",
+        "space-sm": "0.5rem",
+        "margin": "3rem",
+        "space-xs": "0.25rem"
+      },
+      "fontFamily": {
+        "body-lg": ["Outfit"],
+        "headline-sm": ["Outfit"],
+        "label-caps": ["Outfit"],
+        "headline-md": ["Playfair Display"],
+        "body-sm": ["Outfit"],
+        "label-md": ["Outfit"],
+        "headline-lg": ["Playfair Display"],
+        "title-lg": ["Outfit"],
+        "headline-lg-mobile": ["Playfair Display"],
+        "display-hero": ["Playfair Display"],
+        "title-md": ["Outfit"],
+        "display-hero-mobile": ["Playfair Display"],
+        "body-md": ["Outfit"]
+      },
+      "fontSize": {
+        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+        "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+        "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+        "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+        "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+        "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-md flex-wrap"><span class="flex items-center gap-space-xs text-primary-fixed-dim"><span class="material-symbols-outlined text-[16px]">verified</span>CBSE Affiliated Higher Secondary Institution | Affiliation No: 1030982</span><span class="hidden lg:inline text-on-primary-container">|</span><span class="hidden lg:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">location_on</span>Chhatwai Campus, Madhya Pradesh</span></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-on-primary hover:text-secondary-fixed transition-colors" href="tel:+919876543210"><span class="material-symbols-outlined text-[16px]">call</span>+91 98765 43210</a><a class="hidden sm:flex items-center gap-space-xs text-on-primary hover:text-secondary-fixed transition-colors" href="mailto:admissions@sandipanichhatwai.edu.in"><span class="material-symbols-outlined text-[16px]">mail</span>admissions@sandipanichhatwai.edu.in</a></div></div></div><div class="h-20 bg-surface/90 backdrop-blur-xl"><div class="max-w-[1280px] mx-auto h-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Sandipani School Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjZHmPj_KIPkGNurTGKmr-AXNCMSUyuIgdkl2kmLpNgUKxcD6rb5MqUcrWQLU7Al8xQGTqL4E6tAF-EIdXsNNieSc2zieiDoH-pvEOvhnjuN0Pr9fFJNBAxgvSr8NlMH7m2ULkKFkCdncoAexJBNQrE05wjssAV3A_yHe7DuY-CROUdzrEWzAKVzlxpJrELAy3xx0CsoDas8HWokCWIJoZuaCguz48ZpsAg3mCKX2yez3Yku066gQH"/><div class="flex flex-col"><span class="font-headline-md text-headline-sm text-primary tracking-tight">Sandipani School</span><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">संदीपनि स्कूल, छटवई • Excellence in Holistic Education</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-title-md"><a aria-current="page" class="px-space-sm py-space-xs rounded transition-colors bg-surface-container text-primary font-title-md" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded transition-colors" data-path="campus-facilities" href="#">Campus &amp; Facilities</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded transition-colors" data-path="academics" href="#">Academics</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded transition-colors" data-path="faculty-mentors" href="#">Faculty &amp; Mentors</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded transition-colors" data-path="admissions" href="#">Admissions 2025-26</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden md:inline-flex items-center justify-center bg-secondary text-on-secondary hover:bg-on-secondary-container hover:text-on-secondary font-label-md text-label-md px-space-lg py-space-sm rounded-full transition-all shadow-[0_4px_20px_-2px_rgba(15,43,92,0.05)]" data-path="apply-now" href="#">Apply for Admission / दाखिला लें</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH ASYMMETRIC VISUAL DEPTH -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary py-space-xl lg:py-24">
+<!-- Atmospheric Ambient Elements -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 right-0 w-[550px] h-[550px] rounded-full bg-tertiary-container/30 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-[1280px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+<!-- Hero Textual Narrative -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md z-10">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-secondary-fixed w-max shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">school</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Affiliated to CBSE, New Delhi • 1030982</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-headline-sm text-secondary-fixed block text-title-md font-semibold tracking-wide">
+              संस्कारवान शिक्षा, आधुनिक दृष्टिकोण
+            </span>
+<h1 class="font-display-hero text-display-hero text-on-primary leading-tight font-bold">
+              Nurturing Minds, Cultivating Leaders of Tomorrow
+            </h1>
+</div>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed max-w-2xl">
+            Sandipani School, Chhatwai provides world-class education rooted in timeless values and modern innovation — featuring advanced AI laboratories, an expansive athletic sports arena, and visionary educators.
+          </p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center justify-center gap-space-xs bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container font-label-md text-label-md px-space-xl py-space-sm rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-0.5" href="#admission-enquiry">
+<span>Explore Admissions 2025–26</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md px-space-lg py-space-sm rounded-full backdrop-blur-md transition-all duration-300" onclick="document.getElementById('video-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Take Virtual Campus Tour</span>
+</button>
+</div>
+<!-- Accreditations & Trust Pills -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-lg text-primary-fixed-dim font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">verified</span>
+<span>K-12 Holistic CBSE Pedagogy</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">psychology</span>
+<span>NEP 2020 Aligned Curriculum</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">directions_bus</span>
+<span>Comprehensive 25km Bus Network</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Showcase -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Frame with Accent Border -->
+<div class="rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest/5 p-2 backdrop-blur-sm">
+<img class="w-full h-[440px] object-cover rounded-lg" data-alt="A grand cinematic, sunlit photograph of Sandipani School modern building in Chhatwai, Madhya Pradesh. Indian school students in smart formal school uniforms happily walking in the verdant green landscaped courtyard, architectural colonnades, clear blue skies, prestige collegiate atmosphere, high detail editorial photography with golden natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVDA3b1YgJCyxuRASoolcbyZMkliTT2b33OpWpxGxTqIKKLb41We3UEqqh7I8irAedOWpRpexvuIP1XYlJ6mbQFGyKzU8S3Mdds6UBItEMa6aKqOFBYkxVdvPb7-6Dcq5Z8VkFayhUUIXMUguBlAARiAoYzsbrPkymLgfWIcKy2Qqm_PUn7sBwn3LR8KgxTZa5HgI2T5gteHsDS9F6X-aGgezfW4cerqlTnHC_hsncVIZP65_iRYai"/>
+</div>
+<!-- Floating Stamp Card 1 -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest text-on-surface p-space-md rounded-xl shadow-xl flex items-center gap-space-md max-w-[260px]">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[26px]">trophy</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Academic Merit</p>
+<p class="font-title-md text-title-md text-primary font-bold">100% Board Pass</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Distinction in CBSE 2024</p>
+</div>
+</div>
+<!-- Floating Stamp Card 2 -->
+<div class="hidden sm:flex absolute -top-5 -right-5 bg-surface-container-lowest text-on-surface px-space-md py-space-xs rounded-full shadow-lg items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">Admissions Open 2025–26</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK STATS HIGHLIGHT BAR -->
+<section class="w-full bg-surface-container-lowest shadow-md relative z-20">
+<div class="max-w-[1280px] mx-auto px-margin py-space-lg">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg divide-y md:divide-y-0 md:divide-x-0">
+<!-- Stat 1 -->
+<div class="flex flex-col items-start space-y-1">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">stadium</span>
+<span class="font-display-hero text-[34px] font-bold text-primary tracking-tight">12+</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Acres Lush Campus</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standardized 400m running track &amp; mega athletic grounds</p>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col items-start space-y-1 pt-space-sm md:pt-0">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">cast_for_education</span>
+<span class="font-display-hero text-[34px] font-bold text-primary tracking-tight">100%</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Smart Classrooms</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interactive 4K digital smartboards with central ventilation</p>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col items-start space-y-1 pt-space-sm md:pt-0">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">group</span>
+<span class="font-display-hero text-[34px] font-bold text-primary tracking-tight">1:15</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Student-Mentor Ratio</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Individual nurturing, mentorship, &amp; remedial assistance</p>
+</div>
+<!-- Stat 4 -->
+<div class="flex flex-col items-start space-y-1 pt-space-sm md:pt-0">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">biotech</span>
+<span class="font-display-hero text-[34px] font-bold text-primary tracking-tight">3+</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Modern Specialized Labs</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">AI &amp; Robotics Hub, Chemistry and Integrated Science units</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CAMPUS & WORLD-CLASS FACILITIES SHOWCASE -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="campus-facilities">
+<div class="max-w-[1280px] mx-auto px-margin space-y-space-xl">
+<!-- Section Header with Editorial Framing -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">
+            World-Class Infrastructure • विश्वस्तरीय सुविधाएं
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+            Designed for Holistic Awakening &amp; Scientific Wonder
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Every square foot at Sandipani Chhatwai is purposely crafted to facilitate experiential discovery, physical vigor, and intellectual fearless enquiry.
+          </p>
+</div>
+<div class="shrink-0">
+<a class="inline-flex items-center gap-space-xs text-secondary font-label-md text-label-md hover:text-on-secondary-container transition-colors" href="#admission-enquiry">
+<span>Schedule an in-person campus walkthrough</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+</div>
+<!-- 5-Card Bento & Asymmetric Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg">
+<!-- CARD 1: EXPANSIVE SPORTS GROUND (Large Showcase - Span 7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative w-full h-72 overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vast cinematic aerial wide photograph of Sandipani School athletic sports ground in Chhatwai. Students in sports kits running on a standardized 400m red running track, manicured lush green football turf, pristine cricket practice pitch with nets, basketball court with clear morning sunlight and distant trees, active sports atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5je7ldaBVFwuTxyo82d76gpf8eaLwOExRf2wlZ6qaosE9doKCO22NxREx5E41-anJa21QWPQv7sQ8hle7zJQbBDaG_1zjYOkqUJ1flcsEIvv4zbjIQpsX0Or0cTdOlLPjnv0i5Rul6W-7wzCa89H00vmambDJ1tRjMigY1C_q1L_j82Mo8QlXa4oDBZ277SJ3aTvCXjcPRCiLyVUV6M0XHx5QX7sg8ERnyCSYO2pWGd-QR3HCnPIt"/>
+<div class="absolute top-4 left-4">
+<span class="px-space-md py-1 rounded-full bg-primary/90 text-on-primary font-label-caps text-label-caps uppercase tracking-wider backdrop-blur-sm shadow-md">
+                12-Acre Athletic Arena
+              </span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-label-caps text-label-caps uppercase font-bold">
+              NIS Certified Coaching
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Physical Stamina &amp; Team Spirit</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+                Expansive Sports Ground &amp; Multi-Sport Arena
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Our championship-grade outdoor campus encourages physical excellence, mental endurance, and collaborative camaraderie through daily structured athletic periods.
+              </p>
+</div>
+<!-- Highlights Checklist -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>400m Red-Clay Running Track</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Football Turf &amp; Cricket Net Pitches</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Standard Basketball &amp; Badminton Courts</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dedicated Morning Yoga &amp; Pranayam Pavilion</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Open for Grade 1 through 12</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: NEXT-GEN AI & ROBOTICS LAB (Span 5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative w-full h-72 overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic and bright school computer laboratory with high-spec desktop monitors displaying Python code and robotic algorithm blocks. Indian middle school students collaborating on a small Arduino robotics prototype rover, clean modern minimalist desks, ambient navy blue and clean daylight illumination, high-tech educational environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkXfgN_2h2IuzvfUkYz15PqO2IMwJOS0w4k0F9KyATNHV6KKRtCdGoGoXiU2qcz9j5AG1tiSslOKFTFdIQtXdCZXe5jXx_MUmtq9ps87HuzH30O8btzy6n80931R4jvCpEGgUd-Z1Z9rxyS7XYj7LqTCR_BM1pVpcUPZmGo1qzFyDq71JpbNx1I8ZkcZPpfF-0elcO60BXYis8zhXSrfWmxwnphtMR-f6Anc-SK3nweDeEoKOIwI3R"/>
+<div class="absolute top-4 left-4">
+<span class="px-space-md py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider backdrop-blur-sm shadow-md">
+                Industry 4.0 Ready
+              </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">STEM &amp; Computational Thinking</span>
+<h3 class="font-headline-md text-headline-sm text-primary font-bold">
+                Next-Gen AI &amp; Robotics Computer Lab
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Empowering students from middle school onward with real-world computer science skills, coding logic, artificial intelligence models, and IoT micro-controller mechanics.
+              </p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>50+ High-Performance Workstations (Core i7 / Linux &amp; Win)</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Integrated Python, Scratch &amp; Web Coding Modules</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Arduino, Raspberry Pi &amp; Sensor Prototyping Kits</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dedicated 1 Gbps Leased Fiber Internet Pipeline</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">CBSE Skill Curriculum</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: SMART ERGONOMIC CLASSROOMS (Span 4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative w-full h-56 overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bright modern CBSE classroom at Sandipani School with a large interactive touchscreen 4K smartboard at the front displaying an animated solar system diagram. Enthusiastic teacher guiding engaged young students seated on wooden ergonomic desks, wide windows with natural daylight, spotless educational interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX6SS2xh8h1DQE4yi_GYcaHPc_mvv1n_zMl76HFrGkrEzYWnYkPqaNioWv7J0BNZxtDo3SzaDWy-xnca_I26_kMKU6XxRlKU0nJ7yfUN13aQxrsrIVL9kOlT6pX4eY2KTkrujAZUUQI7dGokJkJBVm3jg09hNFFHRRu1yzlu_XQLvRyTtnCezPtrGiPfgrs-3t0akirCrSbIUwDsFDs92wPPFSSlv2V2EHsebsfBMD-AvFnI2Z8ZjI"/>
+<div class="absolute top-4 left-4">
+<span class="px-space-md py-1 rounded-full bg-primary/90 text-on-primary font-label-caps text-label-caps uppercase tracking-wider backdrop-blur-sm shadow-sm">
+                4K Interactive Display
+              </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Digital Pedagogy</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+                Smart Ergonomic Classrooms
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Transforming textbook concepts into multi-sensory interactive experiences through intelligent audio-visual tools.
+              </p>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Interactive Stylus Touch Smartboards</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Acoustic Damping &amp; Centralized Air Purification</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Modular Collaborative Desks</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">All Sections LKG - 12th</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: ADVANCED SCIENCE & DISCOVERY LAB (Span 4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative w-full h-56 overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High school physics and biology science laboratory at Sandipani school. Indian senior secondary students in white coats observing specimen through binocular optical microscopes, optical bench laser setup, botanical charts and anatomical human models in background, clean marble lab benches, serious academic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIN6Qe5_S9n4VHwOMpWfl8V8FRpY-4z0VBcpbFZBh_3AEv3Yqg5TgGwjf3aPMPleZgzihGuryEoGYeVuBuR34lqcSTqI32XaAK3scqawEzhbcHy-ku2rBzve9uCk34WgiD8w0AG86DvP5J2deyZYzM6idgMyUvrJLrPgVO4Ux70sC3_5iUmy2bPy3vZHsDxBO3MC5CwfZ7ECkG9wlS_8miAwRk6SeAzoNvmDNTrbiVKSHXh8f4-Ku7"/>
+<div class="absolute top-4 left-4">
+<span class="px-space-md py-1 rounded-full bg-primary/90 text-on-primary font-label-caps text-label-caps uppercase tracking-wider backdrop-blur-sm shadow-sm">
+                Physics &amp; Biology
+              </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Experiential STEM</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+                Advanced Science Discovery Lab
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Where theoretical textbook science comes alive via precision empirical measurement, mechanics, and specimen biology.
+              </p>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Optical Benches, Spherometers &amp; Galvanometers</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>High-Precision Compound Microscopes</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>3D Anatomical Organ &amp; Plant Morphology Models</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Secondary &amp; Senior Secondary</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 5: STATE-OF-THE-ART CHEMISTRY LAB (Span 4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative w-full h-56 overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern CBSE compliant high school chemistry laboratory at Sandipani school. Rows of neatly arranged borosilicate glass beakers, titration flasks with colored indicators, individual gas burners, automated fume hood chamber, safety eye wash station, clean granite workstations, students wearing safety goggles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_HxYEVMt1aEjdiJ_0G2nMMo_czIBjEknQ-qN-lT6GT5m2x3Bi0-gw33pkN_0WErRdLAjlEetVnaK4z2CKgr9JyJRttCpVeYTNbBJYA1eDcpqET39jx1aVkMFg4gb6aJJxdefDRD8GeKpV3mxGYLAu1RoVMdvWBTCUEmRznN8BdQFx0S3T9zoaDSj6-ZeT52mfQEIOV4RezPXX6IRo00alnBLxwyen3V926ygLtPG_SvYpxUaoO6M5"/>
+<div class="absolute top-4 left-4">
+<span class="px-space-md py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider backdrop-blur-sm shadow-sm">
+                Certified Safety Standards
+              </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Chemical Sciences</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+                State-of-the-Art Chemistry Lab
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Engineered with strict European institutional lab safety measures, individual reagent stations, and exhaust controls.
+              </p>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Dedicated Gas Burner Taps &amp; Fume Extractor Hoods</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Grade-A Borosilicate Glassware &amp; Digital Balances</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">done</span>
+<span>Full Personal Protective Gear &amp; Emergency Showers</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Rigorous Safety Protocol</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: HOLISTIC ACADEMIC CURRICULUM -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-[1280px] mx-auto px-margin space-y-space-xl">
+<div class="text-center max-w-3xl mx-auto space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">
+          Pedagogical Framework • समग्र शैक्षणिक पाठ्यक्रम
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+          Staged Learning Tailored for Every Developmental Milestone
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Integrating modern scientific rigor with deep character formation, preparing students for competitive national milestones and responsible global citizenship.
+        </p>
+</div>
+<!-- 3-Tier Curriculum Columns -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Tier 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-md">
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px]">child_care</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">Foundational Years</span>
+<h3 class="font-headline-md text-headline-sm text-primary font-bold">
+                Pre-Primary Education
+              </h3>
+<p class="font-label-md text-label-md text-on-surface-variant font-medium">Nursery, LKG, UKG (Montessori &amp; Playway)</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Joyous, sensory-rich environments nurturing foundational phonics, mathematical readiness, fine motor agility, and conversational bilingual fluency.
+            </p>
+<div class="space-y-2 pt-2">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Sensory Play &amp; Storytelling Circles</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Foundational Hindi &amp; English Phonics</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Child-safe Dedicated Playground &amp; Sandpit</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="block w-full text-center py-2.5 rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="#admission-enquiry">
+              Foundational Syllabus
+            </a>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between space-y-space-md ring-2 ring-secondary/20">
+<div class="space-y-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]">science</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">Preparatory &amp; Middle</span>
+<h3 class="font-headline-md text-headline-sm text-primary font-bold">
+                Primary &amp; Middle School
+              </h3>
+<p class="font-label-md text-label-md text-on-surface-variant font-medium">Grades 1st through 8th (Experiential STEAM)</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Inquiry-driven learning combining foundational mathematics, environmental sciences, coding principles, and literary appreciation through hands-on projects.
+            </p>
+<div class="space-y-2 pt-2">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Active STEAM &amp; Robotics Explorations</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Bilingual Debating &amp; Sanskrit Heritage</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Compulsory Athletics &amp; Daily Physical Drill</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="block w-full text-center py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" href="#admission-enquiry">
+              Middle School Scheme
+            </a>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]">auto_stories</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">Secondary &amp; Senior Secondary</span>
+<h3 class="font-headline-md text-headline-sm text-primary font-bold">
+                Senior Secondary Wing
+              </h3>
+<p class="font-label-md text-label-md text-on-surface-variant font-medium">Grades 9th through 12th (Science, Comm &amp; Arts)</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Rigorous board examination mastery with integrated coaching support for JEE, NEET, CUET, and NDA under distinguished subject matter specialists.
+            </p>
+<div class="space-y-2 pt-2">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Science (PCM / PCB with AI Elective)</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Commerce &amp; Accountancy Analytics</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Dedicated Board Testing &amp; Doubt Sessions</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="block w-full text-center py-2.5 rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="#admission-enquiry">
+              Senior Wing Prospectus
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FACULTY & MENTORS -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="faculty-mentors">
+<div class="max-w-[1280px] mx-auto px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">
+            Guiding Lights • अनुभवी एवं समर्पित शिक्षक
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+            Guided by Passionate &amp; Visionary Educators
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Our faculty combines academic pedigree from India's premier universities with deep pastoral commitment to bring out every student's innate potential.
+          </p>
+</div>
+<div class="shrink-0 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">workspace_premium</span>
+<span class="font-label-md text-label-md font-semibold text-primary">Avg. 14+ Years Teaching Pedigree</span>
+</div>
+</div>
+<!-- 4 Faculty Profile Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Mentor 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-space-md flex flex-col justify-between group">
+<div class="space-y-space-md">
+<div class="relative w-full h-64 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dignified portrait of Dr. R. K. Sharma, senior Indian male academic principal wearing an elegant beige Nehru jacket over formal shirt, friendly warm expression, distinguished grey hair, library bookshelves in background, professional academic photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0b7XNeBUob8LBMmGel2K2PtYBerA3yIH0BkfcJ4wGHgiP8lCFOivSM0ntrlqyPZOuB3L2gvRGY9ZRHTzeIZwENAGMMVth1IUEsmVkWQmbpBa7PoXf3iLa1c4rnkxtqvnk-FA8NoOLQ3lIVL3rnbEJFIyqxJGfjoM3eCcP7dwA8GBXuVCGIQleRnCsjHHu5gOGL5Gp1cytf4xozCuJP0nmpA5RhbMW2xkx1kjzVZOgcnDANFRQ0Orj"/>
+<div class="absolute bottom-2 left-2 bg-primary/90 text-on-primary px-2.5 py-0.5 rounded text-label-caps font-label-caps uppercase tracking-wider backdrop-blur-sm">
+                Principal &amp; Director
+              </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Dr. R. K. Sharma</h3>
+<p class="font-label-caps text-label-caps text-secondary font-bold uppercase">Ph.D. Education • 22+ Yrs Exp.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                "True education does not merely train the intellect; it anchors moral character, awakens resilience, and instills a desire to serve our society."
+              </p>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">psychology</span>
+<span>Educational Leadership &amp; Pedagogy</span>
+</div>
+</div>
+<!-- Mentor 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-space-md flex flex-col justify-between group">
+<div class="space-y-space-md">
+<div class="relative w-full h-64 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Professional portrait of Mrs. Sunita Verma, experienced Indian female science educator dressed in elegant Indian formal saree with glasses, smiling confidently in modern laboratory setting holding a chemistry notebook, high quality natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvatVVO1qvTnQg7zg0SyENJ64k5BHynhcxIcFZqQOErIRZzFeYgmPKA0gnD9yFfQpjxpZPCeK2lVWvlYSZehQVzGVjZWYr3yWLGc1b_hkL903nKVoS0Z5BOiWsrOSwzAYjB3qzGwuoUib6MGbkc4TsUweLZQHTzzTabt1rnkTci7dBYFYPRF7ee_B7O8IxhLOHtYPY5hhC0H0serNh6FjomW9tmEENF2cApuM57eoSOXTQzhECzEad"/>
+<div class="absolute bottom-2 left-2 bg-primary/90 text-on-primary px-2.5 py-0.5 rounded text-label-caps font-label-caps uppercase tracking-wider backdrop-blur-sm">
+                Head of Sciences
+              </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Mrs. Sunita Verma</h3>
+<p class="font-label-caps text-label-caps text-secondary font-bold uppercase">M.Sc. Chemistry, B.Ed. • 16+ Yrs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                "When chemistry is unlocked through direct tactile experiments, students develop a life-long scientific temper that dispels doubt and fear."
+              </p>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">science</span>
+<span>Senior Chemistry &amp; NEET Mentorship</span>
+</div>
+</div>
+<!-- Mentor 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-space-md flex flex-col justify-between group">
+<div class="space-y-space-md">
+<div class="relative w-full h-64 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Portrait of Mr. Amit Joshi, young energetic Indian male Computer Science faculty member standing near high-tech dual monitor computer station in modern classroom, wearing formal blue collared shirt, confident smile, clean tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCATBx556ltTkkSrgjOxTKuCakhjj79iFc22YLvtfOYAaV4_bIMbzRxL5skM1a9-OZVTJO2IK8pvI1u6Goh3UQOLFpBnEo2zG5Yyy9uUA0Dg4Svbn-XAkHBf9SYmH69_uUiVbCE0rBlDn_TxeoIrE8u9mX-eDyhlErx1orhXqFKNRnHnaH4sbs0vz0f6xq19W9MAU83l4oNjTi35Kpi-mB1msCprzRBBmYm4pLUgMslDwj4Wb02fbw"/>
+<div class="absolute bottom-2 left-2 bg-primary/90 text-on-primary px-2.5 py-0.5 rounded text-label-caps font-label-caps uppercase tracking-wider backdrop-blur-sm">
+                AI &amp; CS Educator
+              </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Mr. Amit Joshi</h3>
+<p class="font-label-caps text-label-caps text-secondary font-bold uppercase">B.Tech, M.Tech (CS) • 10+ Yrs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                "Our aim is not to make consumers of digital apps, but creators who write algorithms, solve regional challenges, and innovate responsibly."
+              </p>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">terminal</span>
+<span>Python, Robotics &amp; AI Algorithms</span>
+</div>
+</div>
+<!-- Mentor 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-space-md flex flex-col justify-between group">
+<div class="space-y-space-md">
+<div class="relative w-full h-64 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Athletic portrait of Coach Vikram Singh, tall fit Indian male sports instructor in red sports track jacket with whistle lanyard, standing on school athletic field with sunny blue sky, confident warm leadership demeanour." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyjRnJ6D2_fYXyDsPGk3AJq-TCpxRJhCNHBdMsnCLiJvaupGV_VH2mPz9qOj7S1MTktgCKvkIZNNg0JxvX_tk6DajdvN9Q1EadJXyxUMHsFpk48lThH7hHHtggtErKWwg3u0gHX8iGaHrpV36RRL5ryRcVoPrxBR5e8cfjxwIvD7e71e_KYZbiGuVEb0fttGToRDUtifPDqKclF8gl2CHkfqBvqPGWo083iCTBVigmw3PJMxJs1pNP"/>
+<div class="absolute bottom-2 left-2 bg-primary/90 text-on-primary px-2.5 py-0.5 rounded text-label-caps font-label-caps uppercase tracking-wider backdrop-blur-sm">
+                Director of Athletics
+              </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Coach Vikram Singh</h3>
+<p class="font-label-caps text-label-caps text-secondary font-bold uppercase">NIS Certified, M.P.Ed • 14+ Yrs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                "Discipline on the running track and playground translates directly into razor-sharp focus inside examination halls and life's hurdles."
+              </p>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">sports_soccer</span>
+<span>Athletics, Football &amp; Fitness Drills</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: PARENT TESTIMONIALS & TRUST -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-[1280px] mx-auto px-margin space-y-space-xl">
+<div class="text-center max-w-3xl mx-auto space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">
+          Parental Trust • अभिभावकों का विश्वास
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+          Stories of Growth, Discipline &amp; Joy
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Hear how Sandipani School, Chhatwai is creating transformative educational journeys for local and regional families.
+        </p>
+</div>
+<!-- 3 Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "The shift in our son after joining Sandipani Chhatwai has been astounding. The 12-acre sports ground and running track gave him physical confidence, while the smart classrooms keep him thoroughly intrigued in mathematics."
+            </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-title-md">
+              MP
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold">Mahesh Prasad Tiwari</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Father of Aryan (Grade 8) • Chhatwai</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "The AI &amp; Robotics lab is not just a marketing claim here. My daughter in 9th grade already writes clean Python code and was trained on robotics components. Best CBSE school infrastructure anywhere in the district."
+            </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-title-md">
+              AS
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold">Dr. Ananya Sharma</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mother of Diya (Grade 9) • Medical Practitioner</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "What sets Sandipani apart is sanskaar (moral grounding). Teachers like Dr. Sharma and Mrs. Verma give individual mentorship. Safety, bus transport, chemistry labs, and sports are all truly top-notch."
+            </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-title-md">
+              RC
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold">Rajesh Chouhan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Parent of Prateek (Grade 11 Science)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: QUICK ADMISSION ENQUIRY & CAMPUS VISIT FORM (2-COLUMN ARCHITECTURE) -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="admission-enquiry">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Column 1: Institutional Contact & Campus Info -->
+<div class="lg:col-span-5 bg-primary text-on-primary p-space-lg lg:p-space-xl flex flex-col justify-between space-y-space-xl relative overflow-hidden">
+<!-- Background Glow -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<div class="space-y-space-md relative z-10">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest font-bold">
+                Direct Institutional Admissions • प्रवेश संपर्क
+              </span>
+<h3 class="font-headline-lg text-headline-md text-on-primary font-bold">
+                Begin Your Child's Journey of Excellence
+              </h3>
+<p class="font-body-md text-body-md text-primary-fixed leading-relaxed">
+                Connect with our Dean of Admissions or schedule a guided walking tour across our 12-acre green campus in Chhatwai.
+              </p>
+<!-- Campus Details List -->
+<div class="space-y-space-md pt-space-sm">
+<!-- Location -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-primary font-semibold">Campus Address</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Sandipani School, Chhatwai Main Road, Dist. MP - 486882</p>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-primary font-semibold">Helpline Numbers</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">+91 98765 43210 • +91 94567 89012</p>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-primary font-semibold">Admissions Secretariat</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">admissions@sandipanichhatwai.edu.in</p>
+</div>
+</div>
+<!-- Visiting Hours -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-primary font-semibold">Campus Visiting Hours</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Monday – Saturday: 8:00 AM – 3:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Transport Note Pill -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest/10 backdrop-blur-md space-y-1 relative z-10">
+<div class="flex items-center gap-space-xs text-secondary-fixed font-semibold text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px]">airport_shuttle</span>
+<span>Safe GPS-Monitored School Bus Transit</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed">Covering Chhatwai, surrounding townships, and key transit arterial stops within a 25km radius.</p>
+</div>
+</div>
+<!-- Column 2: Interactive Instant Enquiry Form -->
+<div class="lg:col-span-7 p-space-lg lg:p-space-xl flex flex-col justify-center">
+<div class="space-y-space-xs mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-wider">
+                Session 2025–2026 Admissions
+              </span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+                Online Admission Enquiry / पूछताछ पत्र
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Fill this brief enquiry. Our admissions counselors will revert with the prospectus, fee structure, and entrance assessment schedule within 24 business hours.
+              </p>
+</div>
+<form class="space-y-space-md" id="enquiry-form" onsubmit="event.preventDefault(); document.getElementById('form-success-banner').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Student Name -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-medium block">
+                    Student Full Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="e.g. Aarav Sharma" required="" type="text"/>
+</div>
+<!-- Grade Applying For -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-medium block">
+                    Grade Applying For <span class="text-error">*</span>
+</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" required="">
+<option disabled="" selected="" value="">Select Grade</option>
+<option value="nursery">Pre-Primary (Nursery / LKG / UKG)</option>
+<option value="primary">Primary (Grade 1 - 5)</option>
+<option value="middle">Middle School (Grade 6 - 8)</option>
+<option value="secondary">Secondary (Grade 9 - 10)</option>
+<option value="sci">Senior Secondary Science (11th/12th)</option>
+<option value="comm">Senior Secondary Commerce (11th/12th)</option>
+<option value="arts">Senior Secondary Humanities (11th/12th)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Parent Phone Number -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-medium block">
+                    Parent / Guardian Phone <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" pattern="[0-9]{10}" placeholder="10-digit mobile number" required="" type="tel"/>
+</div>
+<!-- Parent Email -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-medium block">
+                    Parent Email Address
+                  </label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="parent@example.com" type="email"/>
+</div>
+</div>
+<!-- Message / Special Requirements -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-medium block">
+                  Questions or Preferred Campus Visit Date
+                </label>
+<textarea class="w-full px-space-md py-2.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm resize-none" placeholder="Kindly mention if transport required, hostel interest, or sports specializations..." rows="3"></textarea>
+</div>
+<!-- Success Notification -->
+<div class="hidden p-space-md bg-secondary-fixed/50 text-on-secondary-container rounded-lg flex items-center gap-space-sm" id="form-success-banner">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold">Thank you! Your enquiry has been received. Our admission mentor will call you shortly.</span>
+</div>
+<div class="pt-space-xs flex items-center justify-between flex-wrap gap-space-md">
+<button class="inline-flex items-center justify-center gap-space-xs bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container font-label-md text-label-md px-space-xl py-3 rounded-full transition-all duration-300 shadow-md font-bold" type="submit">
+<span>Submit Admission Enquiry / दाखिला पूछताछ भेजें</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+                  Your information is 100% confidential
+                </span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAMPUS MAP & GEOGRAPHIC REACH STRIP -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-xl">
+<div class="flex items-center gap-space-xs text-secondary font-bold">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Strategic Accessibility</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">
+            Easily Accessible Across Chhatwai Region
+          </h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Situated in an unpolluted, tranquil setting optimal for intense study. Smooth four-lane highway connectivity with dedicated safe transportation pick-ups.
+          </p>
+</div>
+<div class="w-full lg:w-96 h-48 rounded-xl overflow-hidden shadow-md relative">
+<div class="w-full h-full bg-cover bg-center" data-location="Chhatwai, Madhya Pradesh, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0VSDsokcXA2XjLXK9NNjc0KPmnPmU0FzfC8xqGbRYJIl-uHW_dEv0B1tqqFX4k6OmR52UANJL-mlBV2XH8lTCm9yaZ_yMSONmTh30ZoLsyIPl9JlW6n5HZXpTHxWtlU-qBxh1f_u3KttHNd9gbt-1CzwygHrKe2iL--e-dW_G1REKEhkP0FPvF8vlaWWL1GfZ8UIXe78tc-DxTYWPwyOaEZHmATqKLxsQ9xlHtcwikg7-cCEiRiqT')"></div>
+<div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded text-primary font-label-caps text-label-caps uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span>Chhatwai Campus, M.P.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL: VIRTUAL CAMPUS TOUR PREVIEW -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/80 backdrop-blur-md" id="video-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full p-space-lg shadow-2xl relative">
+<div class="flex items-center justify-between pb-space-sm">
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Sandipani Chhatwai Campus Tour</h4>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('video-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="relative w-full aspect-video bg-primary rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="Wide-angle aerial campus panorama of Sandipani School Chhatwai showing modern athletic running tracks, academic blocks, landscaped gardens under clear morning sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs7lIktYYior7I9DyojIWPDEvFZQ0unrAp-0ITAhEzZwQwMCSbXOh4cCN0t3BpAoYJSas7BS4bOhyv0-IpVDZ8_VnXf0MjmHzou1hoKPwhET1d_53NekuzMcHG6_pjPYRozt0EbgmtTqpvsrjiYqy_tJgGsOYVUGKnSwTeoVgwz8dkw_BiDROlHq03P7tUvkGX-WwIEJDWt6af0VAA9Fsy3NOOjZLUaYQWhl78NtjSg_30rSpcDUCO"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary bg-primary/40 p-4 text-center">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center mb-3 shadow-lg cursor-pointer transform hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<p class="font-headline-sm text-title-lg font-bold">Experience the Sandipani Campus Vibrancy</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim max-w-md">Streaming aerial views of 400m running grounds, AI computer lab, Chemistry experiments and smart classrooms.</p>
+</div>
+</div>
+<div class="pt-space-md flex justify-end">
+<button class="px-space-lg py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md" onclick="document.getElementById('video-modal').classList.add('hidden')">
+          Close Preview
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1280px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Sandipani School Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjZHmPj_KIPkGNurTGKmr-AXNCMSUyuIgdkl2kmLpNgUKxcD6rb5MqUcrWQLU7Al8xQGTqL4E6tAF-EIdXsNNieSc2zieiDoH-pvEOvhnjuN0Pr9fFJNBAxgvSr8NlMH7m2ULkKFkCdncoAexJBNQrE05wjssAV3A_yHe7DuY-CROUdzrEWzAKVzlxpJrELAy3xx0CsoDas8HWokCWIJoZuaCguz48ZpsAg3mCKX2yez3Yku066gQH"/><span class="font-headline-md text-title-lg text-primary">Sandipani School, Chhatwai</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Fostering character, intellectual rigor, and modern scientific inquiry in Chhatwai. Affiliated to CBSE New Delhi, preparing visionary global citizens rooted in Indian cultural values.</p><div class="pt-space-xs flex items-center gap-space-sm text-on-surface-variant"><span class="font-label-caps text-label-caps uppercase text-secondary">CBSE Code: 1030982</span><span class="text-outline-variant">•</span><span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Est. 2004</span></div></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary">Navigation</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="home" href="#">Institutional Home</a></li><li><a class="hover:text-primary transition-colors" data-path="about-us" href="#">About Sandipani</a></li><li><a class="hover:text-primary transition-colors" data-path="academics" href="#">Academic Pedagogy</a></li><li><a class="hover:text-primary transition-colors" data-path="faculty-mentors" href="#">Educators &amp; Leadership</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="#">Campus Directory</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary">Campus &amp; Facilities</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="campus-facilities" href="#">AI Computer Lab</a></li><li><a class="hover:text-primary transition-colors" data-path="campus-facilities" href="#">Advanced Chemistry Lab</a></li><li><a class="hover:text-primary transition-colors" data-path="campus-facilities" href="#">Integrated Science Labs</a></li><li><a class="hover:text-primary transition-colors" data-path="campus-facilities" href="#">Olympic Sports Ground</a></li><li><a class="hover:text-primary transition-colors" data-path="campus-facilities" href="#">Smart Digital Classrooms</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-title-md text-title-md text-primary">Admissions Newsletter</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive notifications regarding 2025-26 entrance sessions and open campus dates.</p><form class="space-y-space-xs" onsubmit="return false;"><div class="relative"><input class="w-full px-space-md py-space-xs text-body-sm font-body-sm bg-surface rounded-lg text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" placeholder="Enter parent email address" type="email"/></div><button class="w-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md py-space-xs rounded-full transition-colors" type="submit">Subscribe Updates</button></form></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">shield</span><span>© 2025 Sandipani School, Chhatwai (संदीपनि स्कूल). All rights reserved.</span></div><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="#">Mandatory Disclosures</a><a class="hover:text-primary transition-colors" data-path="terms-of-admission" href="#">Code of Conduct</a><a class="hover:text-primary transition-colors" data-path="contact" href="#">Map &amp; Directions</a></div></div></div></footer></body></html>
